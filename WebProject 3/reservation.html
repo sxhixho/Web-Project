@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="icon" type="image/jpeg" href="assets/images/icon.jpeg">
+
+    <title>Reservations</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="nav-item" >Home</a>
+            <a href="reservation.html" class="nav-item" >Make a reservation</a>
+            <a href="reservations.html" class="nav-item" >Reservations</a>
+            <a href="restaurant.html" class="nav-item">Order from our restaurant</a>
+            <a href="gallery.html" class="nav-item">Hotel gallery</a>
+            <a href="reviews.html" class="nav-item" >Reviews</a>
+            <a href="contact.html" class="nav-item" >Contact</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="header">Make a Reservation</h1>
+        <form id="reservationForm">
+
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" required>
+
+            <label for="email">Email address:</label>
+            <input type="text" id="email" required>
+
+            <label for="checkInDate">Check-In Date:</label>
+            <input type="date" id="checkInDate" required>
+
+            <label for="checkOutDate">Check-Out Date:</label>
+            <input type="date" id="checkOutDate" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" min="1" max="10" value="1" required>
+
+            <label for="rooms">Select a Room:</label>
+            <select id="rooms" required>
+                <option value="single">Single Room</option>
+                <option value="double">Double Room</option>
+                <option value="suite">Suite</option>
+            </select>
+
+            <button type="button" id="submitBtn" class="submit-button">Submit Reservation</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> The Ivy Boutique Hotel. All rights reserved.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/scripts/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant Menu</title>
+  <link rel="stylesheet" href="assets/styles/restaurant.css">
+  <link rel="stylesheet" href="assets/styles/styles.css">
+  <link rel="icon" type="image/jpeg" href="assets/images/icon.jpeg">
+
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="nav-item" >Home</a>
+            <a href="reservation.html" class="nav-item" >Make a reservation</a>
+            <a href="reservations.html" class="nav-item" >Reservations</a>
+            <a href="restaurant.html" class="nav-item">Order from our restaurant</a>
+            <a href="gallery.html" class="nav-item">Hotel gallery</a>
+            <a href="reviews.html" class="nav-item" >Reviews</a>
+            <a href="contact.html" class="nav-item" >Contact</a>
+        </div>
+    </nav>
+
+  <div class="container">
+    <h1>Restaurant Menu</h1>
+
+    <!-- we define custom attributes to each menu item using data- -->
+    <div class="menu">
+      <div class="menu-item">
+        <h2>Burger</h2>
+        <div class="image">
+          <img src="assets/images/burger.png" alt="burger">
+        </div>
+        <p>Delicious burger with cheese, lettuce, and tomato - $10</p>
+        <button class="add-to-cart" data-name="Burger" data-price="10">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <h2>Pasta</h2>
+        <div class="image">
+          <img src="assets/images/pasta.jpg" alt="pasta">
+        </div>
+        <p>Spaghetti pasta with marinara sauce - $12</p>
+        <button class="add-to-cart" data-name="Pasta" data-price="12">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <h2>Steak</h2>
+        <div class="image">
+          <img src="assets/images/steak.jpg" alt="steak">
+        </div>
+        <p>Ribeye steak with roasted potatoes - $15</p>
+        <button class="add-to-cart" data-name="Steak" data-price="15">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <h2>Fish</h2>
+        <div class="image">
+          <img src="assets/images/fish.jpeg" alt="fish">
+        </div>
+        <p>Pan seared salmon with grilled vegetables - $14</p>
+        <button class="add-to-cart" data-name="Fish" data-price="14">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <h2>Chicken</h2>
+        <div class="image">
+          <img src="assets/images/chicken.jpg" alt="chicken">
+        </div>
+        <p>Roasted chicken with mashed potatoes - $13</p>
+        <button class="add-to-cart" data-name="Chicken" data-price="13">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <h2>Pizza</h2>
+        <div class="image">
+          <img src="assets/images/pizza.jpg" alt="pizza">
+        </div>
+        <p>Classic pizza margherita - $10</p>
+        <button class="add-to-cart" data-name="Pizza" data-price="10">Add to Cart</button>
+      </div>
+
+    </div>
+
+    <div class="cart">
+      <h2>Cart 🛒</h2>
+      <ul class="cart-items"></ul>
+      <p class="total">Total: $<span id="cart-total">0</span></p>
+      <button class="submit-order">Submit Order</button>
+      <button class="clear-cart">Clear Cart</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> The Ivy Boutique Hotel. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="assets/scripts/restaurant.js"></script>
+  <script src="assets/scripts/index.js"></script>
+
+</body>
+</html>

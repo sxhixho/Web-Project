@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Reviews Page</title>
+  <link rel="stylesheet" href="assets/styles/reviews.css">
+  <link rel="stylesheet" href="assets/styles/styles.css">
+
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-container">
+        <a href="index.html" class="nav-item" >Home</a>
+        <a href="reservation.html" class="nav-item" >Make a reservation</a>
+        <a href="reservations.html" class="nav-item" >Reservations</a>
+        <a href="restaurant.html" class="nav-item">Order from our restaurant</a>
+        <a href="gallery.html" class="nav-item">Hotel gallery</a>
+        <a href="reviews.html" class="nav-item" >Reviews</a>
+        <a href="contact.html" class="nav-item" >Contact</a>
+    </div>
+</nav>
+
+    <h1>Hotel Reviews</h1>
+
+    <div class="review-form">
+      <h2>Add a Review</h2>
+      <form id="reviewForm">
+        <label for="username">Your Name:</label>
+        <input type="text" id="username" name="username" required placeholder="Full Name">
+
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+          <option value="0">0 - Terrible</option>
+          <option value="1">1 - Bad</option>
+          <option value="2">2 - Poor</option>
+          <option value="3">3 - Average</option>
+          <option value="4">4 - Good</option>
+          <option value="5">5 - Excellent</option>
+        </select>
+
+
+        <label for="comment">Your Review:</label>
+        <textarea id="comment" name="comment" rows="4" required placeholder="Describe your experience:"></textarea><br><br>
+
+        <button id="submitBtn" type="submit">Submit Review</button>
+      </form>
+    </div>
+
+    <div id="reviewsDiv">
+      <h2>Top Reviews</h2>
+      
+      <div>
+      <h3>Guest 1</h3>
+      <h4>5/5</h4>
+      <p id="paragraph1">Lovely hotel. All staff very friendly and helpful. Exceptionally clean throughout. Excellent value for money. Many cafes and restaurants within a few minutes walk. Highly recommended!!</p>
+      <button id="hideBtn1">Hide text</button>
+      <button id="showBtn1">Show text</button>
+      </div>
+    
+
+      <div>
+        <h3>Guest 2</h3>
+        <h4>5/5</h4>
+        <p id="paragraph2">Mick the host was extremely friendly and helpful throughout my stay. The bedroom was perfect and the location offers a great view and is very quiet. I definitely recommend!</p>
+        <button id="hideBtn2">Hide text</button>
+        <button id="showBtn2">Show text</button>
+      </div>
+
+      <h2>Latest Review</h2>
+      <div>
+        <h3 id="nameHeader"></h3>
+        <h4 id="ratingHeader"></h4>
+        <p id="reviewText"></p>
+        <button id="hideBtn3" hidden="true">Hide text</button>
+        <button id="showBtn3" hidden="true">Show text</button>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; <span id="currentYear"></span> The Ivy Boutique Hotel. All rights reserved.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/scripts/reviews.js"></script>
+
+</body>
+</html>

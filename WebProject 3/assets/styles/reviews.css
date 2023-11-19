@@ -1,0 +1,64 @@
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1{
+  text-align: center;
+}
+
+h3{
+  color: black;
+}
+
+#reviewsDiv h3{
+  color: black;
+}
+
+.review-form, #reviewsDiv {
+  max-width: 600px; 
+  margin: auto;
+  margin-bottom: 50px;
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.review-form label,
+.review-form textarea,
+.review-form input[type="text"],
+.review-form input[type="number"],
+.review-form button {
+  display: block;
+  margin-bottom: 15px; 
+  width: 100%;
+  border-radius: 5px; 
+}
+
+
+
+.review-form label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.review-form input[type="text"]:focus,
+.review-form input[type="number"]:focus,
+.review-form textarea:focus {
+  border-color: #3498db; 
+}
+
+
+.review-item {
+  border-bottom: 1px solid #ddd; 
+  padding: 20px 0; 
+}
+
+
+.review-item p {
+  margin: 10px 0; 
+}
+
+div {
+  padding-bottom: 10px;
+}
